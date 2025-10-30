@@ -1,0 +1,237 @@
+body
+{
+    overflow-x: hidden;
+    font-family: 'Albert Sans', sans-serif;
+}
+h1, h2, h3, h4, h5
+{
+    font-family: 'Josefin Sans', sans-serif;
+}
+h2, h3{
+  color: #03444A;
+}
+p{
+  color: #03383D;
+}
+/* globals.css or Header.module.css */
+.navbar .dropdown:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0; /* optional, removes gap */
+}
+
+
+/* ScrollingText.css */
+@keyframes scroll-text {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scrolling-text-container {
+  overflow: hidden; /* Prevents text overflow */
+  width: 100%; /* Ensure the container takes full width */
+}
+
+.scrolling-text {
+  white-space: nowrap; /* Prevents text from wrapping */
+  display: inline-block; /* Keeps text in a single line */
+  animation: scroll-text 10s linear infinite; /* The scrolling effect */
+}
+.banner {
+  height: 550px;
+  background-image: url('/hero-agri.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+footer-nav.footer-nav {
+  background-color: #00a651;
+  display: block;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1.5rem;
+  padding-top: 30px;
+}
+
+.footer-grid strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.footer-grid a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  display: block;
+}
+
+.footer-grid a:hover {
+  text-decoration: underline;
+}
+
+.board
+{
+  max-width: 980px;
+}
+
+.apmc-stats-row > div:nth-child(even) {
+  padding-top: 30px;
+}
+
+
+/* Custom styles for the tabs */
+.custom-tabs .nav {
+  display: flex;
+  width: 100%;
+}
+
+.custom-tabs .nav-link {
+  background-color: #f8f9fa;
+  color: #495057;
+  border-radius: 0;
+  border: 1px solid #00A24F;
+  font-weight: 600;
+  padding: 12px 16px;
+  text-align: center;  /* Ensures the text is centered inside each tab */
+  width: 100%;  /* Makes each tab occupy full width */
+}
+
+.custom-tabs .nav-link.active {
+  background-color: #00A24F; /* Custom green color for active tab */
+  color: white;
+  border-color: #00A24F;  /* Ensure border matches active color */
+}
+
+.custom-tabs .nav-link:hover {
+  background-color: #00A24F;
+  color: #ffffff;
+  border-color: #00A24F;  /* Ensure border matches hover color */
+}
+
+.custom-tabs .nav-item {
+  flex: auto;  /* Ensures each tab takes up equal width */
+}
+
+/* Custom styles for the table */
+.custom-table
+{
+  border: 1px solid #FEA62B;
+  border-radius: 15px;
+}
+.custom-table th {
+  background-color: #FEA62B;  /* Bright yellow for table header */
+  color: #ffffff;
+  font-weight: 600;
+  text-align: left;  /* Center-aligns header text */
+  padding: 15px 10px;  /* Adds padding to the table headers */
+}
+
+.custom-table td {
+  padding: 10px 15px;
+  text-align: left;  /* Ensures table cell text is centered */
+  color: #03444A;
+  vertical-align: middle;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #f1f1f1; /* Light gray on hover */
+}
+
+.custom-table .table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-responsive {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+
+
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .banner {
+    height: 350px;
+    background-position: top;
+  }
+  .navbar-brand img{
+    width: 100px;
+  }
+  .gov .card img
+  {
+    height: 170px !important;
+  }
+  .gov .card-body
+  {
+    padding: 10px;
+  }
+  .gov h5
+  {
+    font-size: 1rem;
+  }
+
+  .board .card img
+  {
+    height: 170px !important;
+  }
+  .board .card-body
+  {
+    padding: 10px;
+  }
+  .board h5
+  {
+    font-size: 1rem;
+  }
+  .custom-tabs .nav {
+    flex-direction: column;  /* Stack tabs vertically on small screens */
+  }
+
+  .custom-tabs .nav-link {
+    padding:10px; /* Maintain consistent padding */
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 20px;
+  }
+  .foot-logo
+  {
+    text-align: left !important;
+  }
+  .foot-logo img
+  {
+    max-width: 100px !important;
+    text-align: left !important;
+    padding-bottom: 20px;
+  }
+  .bottom-foot
+  {
+    display: block !important;
+    text-align: center;
+  }
+  .banner {
+    height: 250px;
+  }
+  .ab-home .row
+  {
+    flex-direction: column-reverse;
+  }
+}
+

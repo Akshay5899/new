@@ -1,0 +1,13 @@
+{
+  "name": "my-backend",
+  "version": "1.0.0",
+  "main": "server_memory.js",
+  "scripts": {
+    "start": "node server_memory.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "multer": "^2.0.2"
+  }
+}
