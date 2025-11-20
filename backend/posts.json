@@ -6,5 +6,13 @@
     "image": "/uploads/4f8fdd2d5c2f9b8cdea749fefcd8bab6",
     "slug": "test-post-1",
     "createdAt": "2025-10-29T12:31:25.003Z"
+  },
+  {
+    "id": 1761799286925,
+    "title": "Test 2",
+    "description": "This is test two posts",
+    "image": "/uploads/f5135682c06fbf4c39d554fb901793a6",
+    "slug": "test-2",
+    "createdAt": "2025-10-30T04:41:26.925Z"
   }
 ]

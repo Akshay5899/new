@@ -6,12 +6,25 @@ body
 h1, h2, h3, h4, h5
 {
     font-family: 'Josefin Sans', sans-serif;
+    color: #03444A;
+}
+h2{
+  font-size: 36px;
 }
 h2, h3{
   color: #03444A;
 }
 p{
   color: #03383D;
+  font-family: 'Albert Sans', sans-serif;
+}
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+    font-family: 'Albert Sans', sans-serif;
 }
 /* globals.css or Header.module.css */
 .navbar .dropdown:hover > .dropdown-menu {
@@ -204,9 +217,15 @@ footer-nav.footer-nav {
   .custom-tabs .nav-link {
     padding:10px; /* Maintain consistent padding */
   }
+  h2{
+  font-size: 28px;
+}
 }
 
 @media (max-width: 576px) {
+  h2{
+  font-size: 25px;
+}
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
     padding-top: 20px;
