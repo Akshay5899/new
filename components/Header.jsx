@@ -44,17 +44,17 @@ export default function Header() {
       name: "Media",
       link: "#",
       dropdown: [
-        { name: "Photo Gallery", link: "#" },
-        { name: "Video Gallery", link: "#" },
+        { name: "Photo Gallery", link: "/media-page/photo-gallery" },
+        { name: "Video Gallery", link: "/media-page/video-gallery" },
       ],
     },
     {
       name: "News",
-      link: "#",
+      link: "/news",
       dropdown: [
-        { name: "Paper/Print Media", link: "#" },
-        { name: "Electronics/Online Media", link: "#" },
-        { name: "Press Note", link: "#" },
+        { name: "Paper/Print Media", link: "/news/paper-print-media" },
+        { name: "Electronics/Online Media", link: "" },
+        { name: "Press Note", link: "/posts" },
       ],
     },
     { name: "Tender", link: "#" },
@@ -113,7 +113,7 @@ export default function Header() {
           </div>
           <div>
             <Link href="#" className="text-white">
-              English &#x25BE;
+              English ▼
             </Link>
           </div>
         </div>
@@ -124,7 +124,7 @@ export default function Header() {
         <nav className="navbar navbar-expand-lg navbar-light py-2">
           <div className="container-fluid">
             <div className="row align-items-center w-100">
-              {/* Left column - Logo */}
+              {/* Left: Logo */}
               <div className="col-12 col-lg-2 d-flex justify-content-between align-items-center">
                 <Link href="/" className="navbar-brand d-flex align-items-center">
                   <img
@@ -135,7 +135,6 @@ export default function Header() {
                   />
                 </Link>
 
-                {/* Toggle button (mobile/tablet) */}
                 <button
                   className="navbar-toggler d-lg-none"
                   type="button"
@@ -146,13 +145,12 @@ export default function Header() {
                 </button>
               </div>
 
-              {/* Right column - Title + Menu */}
+              {/* Right: Title & Menu */}
               <div className="col-12 col-lg-10">
                 <h3 className="fw-bold text-center text-lg-start mb-2 mb-lg-3 d-none d-lg-block">
                   Agricultural Produce Market Committee
                 </h3>
 
-                {/* Collapsible section for mobile/tablet */}
                 <div className="collapse navbar-collapse" id="mainNavbar">
                   <ul className="navbar-nav mt-2 mt-lg-0 align-items-start justify-content-start">
                     {menuItems.map((item, index) => (
@@ -165,22 +163,17 @@ export default function Header() {
                         <Link
                           href={item.link}
                           className="nav-link d-flex align-items-center gap-1"
-                          onClick={(e) => {
-                            if (item.dropdown && item.name !== "About Us") {
-                              e.preventDefault();
-                            }
-                          }}
                         >
                           {item.name}
                           {item.dropdown && (
                             <i
                               className="bi bi-chevron-down ms-1"
-                              style={{ fontSize: "0.8rem", marginTop: "2px" }}
+                              style={{ fontSize: "0.8rem" }}
                             ></i>
                           )}
                         </Link>
 
-                        {/* Dropdown menu */}
+                        {/* Dropdown */}
                         {item.dropdown && (
                           <ul
                             className={`dropdown-menu ${
